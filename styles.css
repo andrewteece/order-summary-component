@@ -107,6 +107,8 @@ body {
   line-height: 1.6;
   color: var(--clr-neutral-400);
   background: var(--clr-primary-200);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
 }
 
 .card__heading--sr-only {
@@ -145,6 +147,7 @@ h2 {
    display: flex;
    gap: var(--gap, 1rem0); 
 }
+
 
 /* UTILITY */
 
@@ -203,6 +206,15 @@ h2 {
 .br-2 {
     border-radius: 1rem;
 }
+
+.push-right {
+    margin-left: auto;
+}
+
+.space-left {
+    margin-left: 1rem;
+}
+
 
 a,
 .link {
