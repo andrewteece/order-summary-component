@@ -130,16 +130,21 @@ h3 {
 
 h2 {
   font-size: var(--fs-700);
+  font-weight: var(--fw-900);
   color: var(--clr-neutral-700);
 }
 
 /* COMPOSITION/LAYOUT STYLES */
 
 .grid-flow {
-    display: grid;
-    gap: 1em;
+  display: grid;
+  gap: var(--gap, 1rem);
 }
 
+.flex-row {
+   display: flex;
+   gap: var(--gap, 1rem0); 
+}
 
 /* UTILITY */
 
@@ -183,10 +188,31 @@ h2 {
   text-align: right;
 }
 
+.fw-bold {
+  font-weight: var(--fw-700);
+}
+
+.fw-xbold {
+  font-weight: var(--fw-900);
+}
+
+.br-1 {
+  border-radius: .5rem;   
+}
+
+.br-2 {
+    border-radius: 1rem;
+}
+
+.button {
+    
+}
+
 /* BLOCK */
 
 .card {
   max-width: 28.125rem;
+  overflow: hidden;
 }
 
 /* FEM ATTRIBUTION */
