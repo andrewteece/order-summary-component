@@ -204,8 +204,22 @@ h2 {
     border-radius: 1rem;
 }
 
-.button {
-    
+a,
+.link {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: var(--clr-primary-400);
+    text-decoration: underline;
+    font-weight: var(--fw-700);
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+    color: var(--clr-primary-300);
+    text-decoration: none;
 }
 
 /* BLOCK */
@@ -213,6 +227,37 @@ h2 {
 .card {
   max-width: 28.125rem;
   overflow: hidden;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: .5rem;
+    background: transparent;
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-700);
+    padding: 1em 2em;
+}
+
+.button[data-type="primary"] {
+    color: var(--clr-neutral-100);
+    background: var(--clr-primary-400);
+}
+
+.button[data-type="primary"]:hover,
+.button[data-type="primary"]:focus {
+    background: var(--clr-primary-300);
+}
+
+.button[data-type="naked"] {
+    color: var(--clr-neutral-400);
+    padding: 0;
+}
+
+.button[data-type="naked"]:hover,
+.button[data-type="naked"]:focus {
+    color: var(--clr-neutral-700);
 }
 
 /* FEM ATTRIBUTION */

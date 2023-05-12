@@ -13,28 +13,28 @@
     <link rel="stylesheet" href="styles.css" class="css" />
   </head>
   <body>
-    <main class="card bg-neutral-100 text-align-center">
+    <main class="[ card ] [ bg-neutral-100 text-align-center br-2 ]">
       <h1 class="card__heading--sr-only">Order Summary Component</h1>
       <img src="images/illustration-hero.svg" class="card__image" alt="hero" />
-      <section class="card__content padding-48 grid-flow">
+      <section class="[card__content] [ grid-flow ] [ padding-48 ] ">
         <h2>Order Summary</h2>
         <p>
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-        <section class="bg-neutral-200 text-align-left">
+        <section class="[ flex-row ] [ bg-neutral-200 text-align-left br-1 padding-24 ]">
           <section>
             <img src="images/icon-music.svg" alt="" />
             <!-- ALT left blank for decorative images -->
           </section>
           <section>
-            <p>Annual Plan</p>
+            <p class="[ text-neutral-700 fw-xbold ]">Annual Plan</p>
             <p>$59.99/year</p>
           </section>
-          <button type="button">Change</button>
+          <button class="link" type="button">Change</button>
         </section>
-        <button type="button">Proceed to Payment</button>
-        <button type="button">Cancel Order</button>
+        <button class="button" data-type="primary" type="button">Proceed to Payment</button>
+        <button class="button" data-type="naked" type="button">Cancel Order</button>
       </section>
     </main>
 
