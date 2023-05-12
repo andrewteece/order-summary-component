@@ -1,12 +1,13 @@
 /* CSS CUSTOM PROPERTIES */
 
 :root {
-  --clr-neutral-100: hsl(0 0% 100%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: hsl(225, 100%, 98%);
-  --clr-neutral-400: hsl(224, 23%, 55%);
+  --clr-neutral-400: hsla(224, 23%, 55%, 1);
   --clr-neutral-700: hsl(223, 47%, 23%);
 
   --clr-primary-200: hsl(225, 100%, 94%);
+  --clr-primary-300: hsla(245, 83%, 68%, 1);
   --clr-primary-400: hsl(245, 75%, 52%);
 
   --fs-700: 1.75rem;
@@ -97,69 +98,96 @@ select {
 /* GENERAL STYLES */
 
 body {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: var(--fs-400);
-    font-weight: var(--fw-400);
-    line-height: 1.6;
-    color: var(--clr-neutral-400);
-    background: var(--clr-primary-200);
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+  color: var(--clr-neutral-400);
+  background: var(--clr-primary-200);
 }
 
-.card__heading--sr-only {  /* H1 for SR Only */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;  
+.card__heading--sr-only {
+  /* H1 for SR Only */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+  line-height: 1.1;
 }
 
 h2 {
-    font-size: var(--fs-700);
-    color: var(--clr-neutral-700);
+  font-size: var(--fs-700);
+  color: var(--clr-neutral-700);
 }
 
-/* COMPOSITION STYLES */
+/* COMPOSITION/LAYOUT STYLES */
 
-
-
+.grid-flow {
+    display: grid;
+    gap: 1em;
+}
 
 
 /* UTILITY */
 
 .padding-24 {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .padding-48 {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .text-neutral-700 {
-    color: var(--clr-neutral-700);
+  color: var(--clr-neutral-700);
 }
 
 .text-neutral-400 {
-    color: var(--clr-neutral-400);
+  color: var(--clr-neutral-400);
 }
 
-.text-neutral-100 {
-    color: var(--clr-neutral-100);
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
 }
 
 .bg-neutral-200 {
-    color: var(--clr-neutral-200);
+  background-color: var(--clr-neutral-200);
 }
 
+.bg-neutral-400 {
+  background-color: var(--clr-neutral-400);
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/* BLOCK */
+
+.card {
+  max-width: 28.125rem;
+}
 
 /* FEM ATTRIBUTION */
 
